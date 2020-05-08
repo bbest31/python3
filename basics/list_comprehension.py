@@ -20,3 +20,7 @@ print(list_4)
 # Just inserts Hi 3 times.
 list_5 = ["Hi" for x in range(0,3)]
 print(list_5)
+
+#Nested list comp
+list_6 = [[x for x in range(1,4)] for i in range(0,3)]
+print(list_6)

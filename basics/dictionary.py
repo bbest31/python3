@@ -41,6 +41,8 @@ copy_dict = my_dict.copy()
 
 # We can also set a bunch of keys to default values
 {}.fromkeys(["name","age", "sex", "height"],"unknown")
+# comprehension way
+{k:"unknown" for k in ["name","age", "sex", "height"]}
 
 # Get - returns the value of the key and returns None if there is no key with that value.
 
@@ -60,3 +62,20 @@ second_dict.update(my_dict) # {"name":"Brandon"}
 #Dictionary comprehension
 
 {x:x**2 for x in range(10)}
+
+# zip() - zips two list together into the keys and values for a dict
+list1 = ["AB", "BC", "ON"]
+list2 = ["Alberta", "British Columbia", "Ontario"]
+
+province_dict = dict(zip(list1,list2))
+print(province_dict)
+
+# from list of tuples to dict
+person = [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]]
+
+# 1. Comprehension
+answer = {thing[0]: thing[1] for thing in person}
+# 2. Comprehension without index ref
+answer = {k:v for k,v in person}
+#3. Dict constructor - this works when passing in a list of pairs.
+answer = dict(person)
