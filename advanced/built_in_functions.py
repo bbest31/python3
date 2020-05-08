@@ -31,5 +31,37 @@ print(evens)
 # any returns true if any elements of an iterable are truthy
 all([1,2,3,4]) # True
 all([0,1]) # False
+any([0,1]) # True
 
 all([char for char in "eio" if char in "aeiou"]) # true
+
+# SORTED
+# returns a new sorted list from the items in iterable
+# This method does not change the original but just returns the sorted version.
+# calling .sort() changes the iterable (in-place sorting).
+
+nums = [6,1,7,3,10]
+print(sorted(nums))
+print(sorted(nums, reverse=True))
+# sorted() on list of dicts
+# sorted(dict, key=<function/lambda>)
+# Ex.
+# sorted(users, key=lambda user: user['username']) - sorts by username
+
+# MAX and MIN
+# Can pass in an iterable or two or more args and select between those.
+# Can also use a generator expression
+
+names = ["Brandon", "Emma", "Name", "Anothername"]
+
+print(max(len(name) for name in names)) # len of the longest name
+print(max(names, key=lambda n: len(n))) # the longest name
+
+# reversed()
+# Returns a reverse iterator
+
+# zip()
+# Make an iterator that aggregates elements from each of the iterables
+# returns an iterator of tuples, where the ith tuple contains the ith element from both argument sequences.
+# the iterator stops when the shortest input iterable is exhausted.
+# you also have to convert it to a list or dict afterwards if you want it to be an instance of those.
