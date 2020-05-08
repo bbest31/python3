@@ -14,7 +14,7 @@ s = set({1,2,3,4,5,5,5,5}) # {1,2,3,4,5}
 
 s.add(6) # doesn't work if it a duplicate.
 s.remove(3) # removes the value 3.KeyError if not in the set.
-s.discard(10) # removes and item but returns None if not in the set.
+s.discard(10) # removes an item but returns None if not in the set.
 S = s.copy()
 
 # UNION OF SETS
@@ -26,4 +26,4 @@ intersection = n & s
 
 # Set Comprehension
 
-{x**2 for x in range(10)}
+{x**2 for x in range(10)} #

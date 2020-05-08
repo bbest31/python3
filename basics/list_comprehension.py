@@ -19,3 +19,4 @@ print(list_4)
 # Can also use different var than iteration
 # Just inserts Hi 3 times.
 list_5 = ["Hi" for x in range(0,3)]
+print(list_5)
