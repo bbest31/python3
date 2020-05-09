@@ -34,6 +34,13 @@ all([0,1]) # False
 any([0,1]) # True
 
 all([char for char in "eio" if char in "aeiou"]) # true
+my_list = [[1],[1],[1],[],[1]]
+all_list = all([i for i in my_list if type(i) == list])
+all_list = True
+for i in my_list:
+    if type(i) != list:
+        all_list = False
+print(all_list)
 
 # SORTED
 # returns a new sorted list from the items in iterable
