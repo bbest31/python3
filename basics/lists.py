@@ -51,4 +51,3 @@ my_list[1:3] # [1,2] exclusive for the end
 
 #swapping values
 my_list[0], my_list[1] = my_list[1], my_list[0]
-
