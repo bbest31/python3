@@ -22,7 +22,7 @@ for key in my_dict.keys():
 # Get both in a tuple
 for tup in my_dict.items():
     print(tup)
-
+    
 # Check for keys
 
 "sex" in my_dict # False
